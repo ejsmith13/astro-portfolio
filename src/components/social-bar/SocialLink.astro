@@ -1,0 +1,7 @@
+---
+const{platform, username, color}=Astro.props
+---
+<a class={"social-link"} href={`https://${platform}.com/${username}`} target={'_blank'}>{platform.toUpperCase()}</a>
+<style define:vars={{color}}>
+    a{ color: var(--color);}
+</style>

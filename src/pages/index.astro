@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css"
-import Navigation from "../components/Navigation.astro"
+import Navigation from "../components/nav-bar/Navigation.astro"
+import Footer from "../components/footer/Footer.astro";
 const pageTitle = "Ethan Smith";
 
 const identity = {
@@ -42,7 +43,8 @@ const textCase = "uppercase";
   </head>
   <body>
    <Navigation/>
-    <h1>{pageTitle}</h1>
+   <main>
+	<h1>{pageTitle}</h1>
     <section>
       <p>Here are a few facts about me:</p>
       <ul>
@@ -72,5 +74,9 @@ const textCase = "uppercase";
         <li><a href={"/posts/post-3"}>Post 3</a></li>
       </ul>
     </section>
+
+   </main>
+   
+	<Footer/>
   </body>
 </html>
