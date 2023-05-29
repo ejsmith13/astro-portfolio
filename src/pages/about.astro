@@ -1,23 +1,29 @@
 ---
-const pageTitle= 'About Me'
+const pageTitle = "About Me";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-        <nav>
-            <ul>
-              <li><a href={"/"}>Home</a></li>
-              <li><a href={"/about"}>{'About'}</a></li>
-              <li><a href={"/blog"}>Blog</a></li>
-            </ul>
-          </nav>
-		<h1>{pageTitle}</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <style>
+      h1 {
+        color: purple;
+        size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href={"/"}>Home</a></li>
+        <li><a href={"/about"}>{"About"}</a></li>
+        <li><a href={"/blog"}>Blog</a></li>
+      </ul>
+    </nav>
+    <h1>{pageTitle}</h1>
+  </body>
 </html>
