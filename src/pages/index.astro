@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css"
+import Navigation from "../components/Navigation.astro"
 const pageTitle = "Ethan Smith";
 
 const identity = {
@@ -40,13 +41,7 @@ const textCase = "uppercase";
     </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href={"/"}>Home</a></li>
-        <li><a href={"/about"}>About</a></li>
-        <li><a href={"/blog"}>Blog</a></li>
-      </ul>
-    </nav>
+   <Navigation/>
     <h1>{pageTitle}</h1>
     <section>
       <p>Here are a few facts about me:</p>

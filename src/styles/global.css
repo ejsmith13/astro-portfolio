@@ -19,3 +19,12 @@ html {
     margin: 1rem 0;
     font-size: 2.5rem;
   }
+
+  #main-nav{width: 100%;}
+  #main-nav ul{
+    display:flex;
+    gap:15px;
+    list-style: none;
+    justify-content: end;
+  }
+  
