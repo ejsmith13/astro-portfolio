@@ -1,5 +1,8 @@
 ---
 import "../styles/global.css"
+
+import Footer from "../components/footer/Footer.astro";
+import Header from "../components/header/Header.astro";
 const pageTitle = "Ethan Smith";
 
 const identity = {
@@ -40,14 +43,9 @@ const textCase = "uppercase";
     </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href={"/"}>Home</a></li>
-        <li><a href={"/about"}>About</a></li>
-        <li><a href={"/blog"}>Blog</a></li>
-      </ul>
-    </nav>
-    <h1>{pageTitle}</h1>
+   <Header/>
+   <main>
+	<h1>{pageTitle}</h1>
     <section>
       <p>Here are a few facts about me:</p>
       <ul>
@@ -77,5 +75,9 @@ const textCase = "uppercase";
         <li><a href={"/posts/post-3"}>Post 3</a></li>
       </ul>
     </section>
+
+   </main>
+   
+	<Footer/>
   </body>
 </html>
